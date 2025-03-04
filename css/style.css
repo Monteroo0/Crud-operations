@@ -97,6 +97,7 @@ body{
     border-radius: 4px ;
     border: solid 2px var(--color-6);
     outline: none;
+    cursor: text;
     &::placeholder{
         color: var(--color-6);  
         padding-left: 5px;
@@ -126,6 +127,7 @@ body{
     border-radius: 4px ;
     border: solid 2px var(--color-6);
     outline: none;
+    cursor: text;
     &::placeholder{
         color: var(--color-6);
         padding-left: 5px;
@@ -146,10 +148,34 @@ body{
     width: 415px;
     font-family: "monM";
     font-size: 14px;
-    color: var(--color-2);
     background-color: var(--button1-1);
     border-radius: 4px;
     border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: var(--button1-2);
+        transform: scale(1.02);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    &:active {
+        transform: scale(0.99);
+        background-color: #91670d;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(228, 147, 72, 0.5);
+    }
+    & a{
+        /* background-color: aliceblue; */
+        padding-left: 40%;
+        padding-right: 40%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        color: var(--color-2);
+        text-decoration: none;
+
+    }
 }
 
 .n6{
